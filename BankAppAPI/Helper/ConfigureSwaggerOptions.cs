@@ -41,7 +41,7 @@ namespace BankService
         {
             var info = new OpenApiInfo()
             {
-                Title = "Bamk Service API",
+                Title = "Bank Service API",
                 Version = description.ApiVersion.ToString()
             };
 
