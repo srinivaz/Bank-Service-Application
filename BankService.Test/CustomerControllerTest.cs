@@ -72,6 +72,32 @@ namespace BankService.Test
         }
 
         [Fact]
+        public void GetVersion1_ReturnsExpectedResult()
+        {
+            //arrange
+            var controller = new CustomerController(_service.Object, _logger.Object, AutomapperSingleton.Mapper, _appSettings.Object);
+
+            //act
+            var result = controller.GetVersion1();
+                       
+            //assert
+            Assert.Equal("Version 1.0" , result.First());
+        }
+
+        [Fact]
+        public void GetVersion2_ReturnsExpectedResult()
+        {
+            //arrange
+            var controller = new CustomerController(_service.Object, _logger.Object, AutomapperSingleton.Mapper, _appSettings.Object);
+
+            //act
+            var result = controller.GetVersion2();
+
+            //assert
+            Assert.Equal("Version 2.0", result.First());
+        }
+
+        [Fact]
         public void Authenticate_WithValidCredential_ReturnsValidTokens()
         {
             //arrange
