@@ -141,6 +141,7 @@ namespace BankService.Controllers
             return Ok(customer);
         }
 
+        [AllowAnonymous]
         [HttpGet("GetVersion")]
         [MapToApiVersion("1.0")]
         public IEnumerable<string> GetVersion1()
@@ -148,6 +149,7 @@ namespace BankService.Controllers
             return new string[] { "Version 1.0" };
         }
 
+        [AllowAnonymous]
         [HttpGet("GetVersion")]
         [MapToApiVersion("2.0")]
         public IEnumerable<string> GetVersion2()

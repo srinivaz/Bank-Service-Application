@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BankService.Test", "BankService.Test\BankService.Test.csproj", "{5DD6EFCD-6E8F-473F-A613-27969BF68F75}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BankService.Test", "..\BankService.Test\BankService.Test.csproj", "{5DD6EFCD-6E8F-473F-A613-27969BF68F75}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BankService", "BankService\BankService.csproj", "{DEACC586-3B31-4D4D-A31F-6FCEB816DEC6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BankService", "BankService.csproj", "{DEACC586-3B31-4D4D-A31F-6FCEB816DEC6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
